@@ -1,0 +1,28 @@
+{
+    "version": "1.0.0",
+    "description": "A CLI tool to generate UUID v1, v3, v4, v5, v6, v7, and v8",
+    "homepage": "https://github.com/antruongnguyen/uuid",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/antruongnguyen/uuid/releases/download/v1.0.0/uuid-1.0.0-x86_64-windows.zip",
+            "hash": "66667fdc53839882ca87074ae681a92838ea0d6faaafca8e44ed6b07401d2e99"
+        },
+        "32bit": {
+            "url": "https://github.com/antruongnguyen/uuid/releases/download/v1.0.0/uuid-1.0.0-i686-windows.zip",
+            "hash": "02e441ee3b224b598f4d113b9ee2b9109760d93fa87a006fb6c47f018dc70731"
+        }
+    },
+    "bin": "uuid.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/antruongnguyen/uuid/releases/download/v$version/uuid-$version-x86_64-windows.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/antruongnguyen/uuid/releases/download/v$version/uuid-$version-i686-windows.zip"
+            }
+        }
+    }
+}
